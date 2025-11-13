@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Unilaskuri"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Ensimmäinen uni -->
+        <TextView
+            android:text="Ensimmäinen uni"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sleep1Start"
+            android:hint="Alku (HH:MM)"
+            android:inputType="time"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sleep1End"
+            android:hint="Loppu (HH:MM)"
+            android:inputType="time"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCCC"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Toinen uni -->
+        <TextView
+            android:text="Toinen uni"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sleep2Start"
+            android:hint="Alku (HH:MM)"
+            android:inputType="time"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sleep2End"
+            android:hint="Loppu (HH:MM)"
+            android:inputType="time"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCCC"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:text="Laske uni"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Historia (30 pv)"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyList"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
